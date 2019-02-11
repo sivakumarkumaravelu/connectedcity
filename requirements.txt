@@ -1,0 +1,37 @@
+Write a Java program which takes three arguments:
+
+1) first city name
+2) second city name
+3) a path to a text file containing comma-separated pairs of connected cities, one pair per line
+
+If the cities specified by the first two arguments are connected then the program prints CONNECTED.  Otherwise, it prints NOT CONNECTED.
+
+For example, if the input file is:
+New York, Chicago
+Denver, Kansas City
+Chicago, Los Angeles
+Kansas City, Nashville
+
+then the program will generate the following output:
+> java ConnectedCities "New York" "Los Angeles" connections.txt
+CONNECTED
+> java ConnectedCities Denver Nashville connections.txt
+CONNECTED
+> java ConnectedCities "Los Angeles" Nashville connections.txt
+NOT CONNECTED
+> java ConnectedCities "New York" "New York" connections.txt
+CONNECTED
+
+Notes:
+- your program will be tested using the attached connected.txt
+- consider introducing a data structure most appropriate for representing connected cities
+- write unit tests where appropriate 
+
+
+
+
+
+
+
+
+
